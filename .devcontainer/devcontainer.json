@@ -1,9 +1,11 @@
-// For format details, see https://aka.ms/devcontainer.json. For config options, see the
-// README at: https://github.com/devcontainers/templates/tree/main/src/python
 {
 	"name": "SCTA Corpus Document Embeddings Sandbox Environment",
-	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "mcr.microsoft.com/devcontainers/python:1-3.12-bullseye",
+	"build": {
+			"dockerfile": "Dockerfile",
+			"args": { 
+					"VARIANT": "3.10"
+			}
+	},
 	"customizations": {
     "vscode": {
       "extensions": [
@@ -12,6 +14,6 @@
 			]
 		}
 	},
-	"postCreateCommand": "pip install pandas gensim &&  git lfs pull",
+	"postCreateCommand": "git lfs pull",
 	"remoteUser": "vscode"
 }
