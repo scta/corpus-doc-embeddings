@@ -1,12 +1,12 @@
-# SCTA Corpus Coc Embeddings 
+# SCTA Corpus Doc Embeddings 
 
 ## Intro
 
-SCTA corpus-doc-embeddings are an embeddings model with vectors representing "items" within the SCTA corpus (reflective of the state of SCTA data at the time of training).
+SCTA corpus doc embeddings are an embeddings model with vectors representing "items" within the SCTA corpus (reflective of the state of SCTA data at the time of training).
 
-SCTA corpus-doc-embeddings version 2023-11-28 are the vectors resulting from training on 2023-10-20. 
+SCTA corpus-doc-embeddings version 2023-11-28 are the vectors resulting from training on 2023-11-28. 
 
-As the corpus grows and texts within the existing corpus are improved these embeddings will be superceded by updated embeddings. 
+As the corpus grows and texts within the existing corpus are improved these embeddings will be superceded by updated embeddings. Previous versions and associated training dating will be retrievable via the version history and corresponding versions tags.
 
 
 ## Training Details for version 2023-11-28
@@ -64,9 +64,9 @@ More specifically, we focused the assertions of similarity made from a specific 
 
 A list of these original 19th century assertions were manually compiled. A function was then written to look for the text with the asserted similarity in the embeddings list of similarity rankings. 
 The rank of the target document within the similarity list was recorded. 
-If the rank was 0, then this meant that the computer had identified the corresponding text (manually identified as similar by the Leonine editors) as the most similar from amoung all 23,433 texts in the corpus.
+If the rank was 0, then this meant that the computer had identified the corresponding text (manually identified as similar by the Leonine editors) as the most similar from among all 23,433 texts in the corpus.
 As similar text was run, but but only after focusing the generated similarities list to only those questions that appear within Aquinas Sentences commentary. 
-A 0 ranking here meant that amoung all the questions within the Sentences Commentary by Aquinas, the computer recognized this question as most similar.
+A 0 ranking here meant that among all the questions within the Sentences Commentary by Aquinas, the computer recognized this question as most similar.
 
 In both the cases, the ranking for all asserted similarties were collected and the average ranking was computed. 
 
