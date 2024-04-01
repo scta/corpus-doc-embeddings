@@ -5,9 +5,6 @@ FROM python:${VARIANT}
 # Set the working directory in the container to /app
 WORKDIR /app
 
-# Create a new user 'vscode' and switch to it
-RUN useradd -m vscode && chown -R vscode /app
-USER vscode
 
 # Install Git LFS
 RUN apt-get update && \
@@ -15,6 +12,10 @@ RUN apt-get update && \
     curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | bash && \
     apt-get install -y git-lfs && \
     git lfs install
+
+# Create a new user 'vscode' and switch to it
+RUN useradd -m vscode && chown -R vscode /app
+USER vscode
 
 # Copy the current directory contents into the container at /app
 COPY . /app
