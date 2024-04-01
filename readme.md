@@ -74,7 +74,7 @@ An example excerpt of resulting rankings can be seen below.
 
 matchUnfiltered means results when compared to all (23,000+) possible items/documents within the SCTA corpus.
 
-![image/png](https://cdn-uploads.huggingface.co/production/uploads/6560a782a72f05d2ea5e0336/6P-PC6R9YIfYflyYUplNU.png)
+<img width="631" alt="image" src="https://github.com/scta/corpus-doc-embeddings/assets/1146685/3a768cf8-272a-4464-8117-b349d58fe4ed">
 
 The chart shows that for 641 asserted parallels, the doc embeddings model (when filtered to look only for matches in the *Sentences Commentary*) identifies the manual assertion, on average, as the 7th highest recommended document. 
 
