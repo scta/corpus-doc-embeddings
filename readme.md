@@ -11,7 +11,12 @@ As the corpus grows and texts within the existing corpus are improved these embe
 
 ## Training Details for version 2023-11-28
 
-The resulting embeddings depend on a number of pre-processing steps, document size construction, embedding algorithms, and training parameters.
+The resulting embeddings (and evaluation outcomes) depend on a number of pre-processing steps, document size construction, embedding algorithms, and training parameters.
+
+You can re-run steps in using the `example/similarity-rankings.ipynb` notebook available in codespace here: 
+
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=780538229)
+
 
 ## Text pre-processing
 
