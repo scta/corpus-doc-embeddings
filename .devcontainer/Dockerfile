@@ -5,6 +5,10 @@ FROM python:${VARIANT}
 # Set the working directory in the container to /app
 WORKDIR /app
 
+# Create a new user 'vscode' and switch to it
+RUN useradd -m vscode && chown -R vscode /app
+USER vscode
+
 # Install Git LFS
 RUN apt-get update && \
     apt-get install -y curl git && \
