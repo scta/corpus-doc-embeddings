@@ -5,7 +5,6 @@ FROM python:${VARIANT}
 # Set the working directory in the container to /app
 WORKDIR /app
 
-
 # Install Git LFS
 RUN apt-get update && \
     apt-get install -y curl git && \
@@ -21,4 +20,4 @@ USER vscode
 COPY . /app
 
 # Install any needed packages specified in requirements.txt
-RUN pip install gensim pandas
+RUN pip install gensim==4.3.0 pandas==2.0.2
